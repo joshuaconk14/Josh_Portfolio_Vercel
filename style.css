@@ -1,0 +1,172 @@
+/* import poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+
+/* - - - - - VARIABLES - - - - - */
+/* variables stored for use, used throughout stylesheet */
+:root{
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-third: rgb(26, 188, 202);
+
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+
+    --second-color: rgb(0, 201, 255);
+    --third-color: rgb(192, 166, 49);
+    --third-shadow-color: rgb(16, 16, 16);
+}
+
+
+/* - - - - - APPLIED TO ALL - - - - - */
+/* '*' means it applies to every element in HTML doc */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* - - - - - SMOOTH SCROLL - - - - - */
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* - - - - - SCROLL BAR DESIGN - - - - - */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px
+}
+
+::-webkit-scrollbar-track{
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #a2a2a2;
+}
+
+
+
+
+/* - - - - - REUSEABLE CSS - - - - - */
+
+
+
+
+
+/* - - - - - GLOBAL BUTTON DESIGN - - - - - */
+.button{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+.button>i{
+    margin-left: 10px;
+}
+.button:hover{
+    background: var(--second-color);
+    color: #ffffff;
+}
+
+
+/* - - - - - GLOBAL ICONS DESIGN - - - - - */
+i{
+    font-size: 16px;
+}
+
+
+/* - - - - - BASE - - - - - */
+body{
+    background: var(--body-color);
+}
+
+.container{
+    width: 100%;
+    position: relative
+}
+
+/* - - - - - NAVIGATION BAR - - - - - */
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex; /* direct children become flex items (takes over alignment / distrib of items) */
+    justify-content: space-between;
+    height: 80px;
+    line-height: 80px; /* amount of vertical space betw lines of text in nav element */
+    background: #ffffff;
+    padding-inline: 9vw; /* left and right padding */
+    z-index: 100; /* handles overlapping elements */
+    transition: .3s;
+}
+
+.nav-logo{
+    position: relative;
+}
+
+.nav-name{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-color-third);
+}
+
+.nav-menu-list{
+    display: flex; /* direct child of nav (parent) div now, since its a flex object too */
+}
+
+.nav-list{
+    list-style: none;
+    position: relative;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--text-color-second);
+    padding-inline: 20px; /* space INSIDE element border */
+    margin-inline: 20px; /* space OUTSIDE element border */
+}
+
+
+.nav-menu-button{
+    display: none; /* none on big window */
+
+}
+.nav-menu-button>i{
+    font-size: 25px;
+}
+
+
+
+
+
+/* - - - - - MEDIA QUERY: 900px -> RESPONSIVE NAV BAR - - - - - */
+@media only screen and (max-width: 900px) { /* when window is 900px wide */
+    .nav-CV{
+        display: none
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+
+        /* ??? */
+        backdrop-filter: blur(20px);
+        min-height: 450px;
+        height: 90vh;
+        transition: .3s
+    }
+}
