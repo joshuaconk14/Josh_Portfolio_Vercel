@@ -54,9 +54,11 @@ html{
 
 /* ----- GLOBAL BUTTON DESIGN ----- */
 .btn{
-    font-weight: 500;
+    text-decoration: none;
+    font-weight: 400;
     padding: 12px 20px;
     background: #efefef;
+    color:#000000;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -176,14 +178,15 @@ nav{
     padding-left: 20px;
 }
 .hello{
-    font-size: 30px;
-    color: var(--text-color-second);
-}
-.featured-name{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
-    color: var(--text-color-third);
+    color: var(--text-color-second);
     margin-block: 20px; /* margin betw start and end of this element block and other stacked element blocks (top and bottom) */
+}
+.hello span{
+    font-size: 55px;
+    color: var(--text-color-third);
+    margin-inline: 15px;
 }
 .featured-description{
     font-size: 15px;
@@ -204,7 +207,7 @@ nav{
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
 }
-.social_icons{
+.social_icons, .social_icons_right{
     display: flex;
     margin-top: 5em;
     gap: 30px;
@@ -213,6 +216,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000000;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -453,7 +457,7 @@ h3{
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i{
-    color: #777;
+    color: #e6e6e6;
     z-index: 2;
 }
 
