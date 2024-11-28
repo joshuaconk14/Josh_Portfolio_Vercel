@@ -209,7 +209,7 @@ nav{
 }
 .social_icons, .social_icons_right{
     display: flex;
-    margin-top: 5em;
+    margin-top: 3.5em;
     gap: 30px;
 }
 .icon{
@@ -359,6 +359,19 @@ h3{
     padding: 2px 10px;
     border-radius: 5px;
 }
+.skills-list-proj{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-block: 10px;
+}
+.skills-list-proj span{
+    font-size: 14px;
+    background: var(--first-color);
+    color: var(--color-white);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
 
 /* ----- PROJECTS BOX ----- */
 .project-container{
@@ -417,6 +430,10 @@ h3{
     color: var(--text-color-second);
     margin-bottom: 10px;
 
+}
+.skills-text{
+    color: var(--text-color-second);
+    margin-block: 10px;
 }
 
 
