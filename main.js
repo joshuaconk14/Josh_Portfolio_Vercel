@@ -33,14 +33,14 @@ function myMenuFunction(){
  })
 /* -- HOME -- */
 sr.reveal('.hello',{})
-sr.reveal('.featured-name',{delay: 100})
-sr.reveal('.featured-description',{delay: 200})
-sr.reveal('.featured-text-btn',{delay: 200})
-sr.reveal('.social_icons',{delay: 200})
-sr.reveal('.featured-image',{delay: 300})
+sr.reveal('.featured-name',{delay: 50})
+sr.reveal('.featured-description',{delay: 100})
+sr.reveal('.featured-text-btn',{delay: 100})
+sr.reveal('.social_icons',{delay: 100})
+sr.reveal('.featured-image',{delay: 150})
 
 /* -- PROJECT BOX -- */
-sr.reveal('.contact-info',{delay: 100})
+sr.reveal('.contact-info',{delay: 50})
 /* -- HEADINGS -- */
 sr.reveal('.top-header',{})
 /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
@@ -52,9 +52,9 @@ const srLeft = ScrollReveal({
   reset: true
 })
 
-srLeft.reveal('.about-info',{delay: 100})
-srLeft.reveal('.project-box',{interval: 200})
-srLeft.reveal('.contact-info',{delay: 100})
+srLeft.reveal('.about-info',{delay: 50})
+srLeft.reveal('.project-box',{interval: 100})
+srLeft.reveal('.contact-info',{delay: 500})
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
   origin: 'right',
@@ -63,9 +63,9 @@ const srRight = ScrollReveal({
   reset: true
 })
 
-srRight.reveal('.skills-box',{delay: 100})
-srRight.reveal('.social_icons_right',{delay: 200})
-srRight.reveal('.project-text-box',{delay: 200})
+srRight.reveal('.skills-box',{delay: 50})
+srRight.reveal('.social_icons_right',{delay: 100})
+srRight.reveal('.project-text-box',{delay: 100})
 
 /* ----- CHANGE ACTIVE LINK ----- */
 const sections = document.querySelectorAll('section[id]')

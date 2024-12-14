@@ -505,6 +505,9 @@ footer{
         width: 320px;
         height: 320px;
     }
+    .nav-link{
+        padding-inline: 6px;
+    }
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
@@ -569,10 +572,13 @@ footer{
         justify-content: center;
         gap: 50px;
     }
+    .col{
+        display: flex;
+        width: 100%;
+    }
     .about-info, .contact-info{
         width: 100%;
         justify-content: center;
-        margin: 0;
     }
     .project-container{
         justify-content: center;
@@ -582,24 +588,6 @@ footer{
         width: 100%;
     }
     .project-text-box{
-        width: 100%;
-    }
-
-}
-
-/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-
-@media only screen and (max-width: 540px){
-    .featured-name{
-        font-size: 40px;
-    }
-    .project-box{
-        width: 100%;
-    }
-    .form-inputs{
-        flex-direction: column;
-    }
-    .input-field{
         width: 100%;
     }
 }
