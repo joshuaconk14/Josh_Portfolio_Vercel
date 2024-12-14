@@ -328,17 +328,6 @@ h3{
     font-size: 15px;
     color: #777;
 }
-.about-btn button{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    background: var(--first-color);
-    color: var(--color-white);
-    border-radius: 30px;
-}
-.about-btn button:hover{
-    background: var(--first-color-hover);
-}
 
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
@@ -519,7 +508,7 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
     .nav-button{
         display: none;
     }
@@ -583,14 +572,17 @@ footer{
     .about-info, .contact-info{
         width: 100%;
         justify-content: center;
-        width: 100%;
+        margin: 0;
     }
     .project-container{
         justify-content: center;
     }
     .project-box{
         display: flex;
-        width: 80%;
+        width: 100%;
+    }
+    .project-text-box{
+        width: 100%;
     }
 
 }

@@ -68,7 +68,6 @@ srRight.reveal('.social_icons_right',{delay: 200})
 srRight.reveal('.project-text-box',{delay: 200})
 
 /* ----- CHANGE ACTIVE LINK ----- */
-
 const sections = document.querySelectorAll('section[id]')
 function scrollActive() {
   const scrollY = window.scrollY;
