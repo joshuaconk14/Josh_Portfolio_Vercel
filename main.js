@@ -29,7 +29,7 @@ function myMenuFunction(){
         origin: 'top',
         distance: '80px',
         duration: 2000,
-        reset: true     
+        reset: false     
  })
 /* -- HOME -- */
 sr.reveal('.hello',{})
@@ -49,7 +49,7 @@ const srLeft = ScrollReveal({
   origin: 'left',
   distance: '80px',
   duration: 2000,
-  reset: true
+  reset: false
 })
 
 srLeft.reveal('.about-info',{delay: 50})
@@ -60,7 +60,7 @@ const srRight = ScrollReveal({
   origin: 'right',
   distance: '80px',
   duration: 2000,
-  reset: true
+  reset: false
 })
 
 srRight.reveal('.skills-box',{delay: 50})
